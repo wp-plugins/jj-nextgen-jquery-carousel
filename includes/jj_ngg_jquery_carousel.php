@@ -229,19 +229,17 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
     
     // Add javascript
     $output .= "\n<script type=\"text/javascript\">";
-    $output .= "\n  jQuery(document).ready(function() {";                
     // Shuffle results on random order so even if page is cached the order will be different each time
     if($order == 'random')
     {
-      $output .= "\n    jQuery('ul#" . $html_id . "').jj_ngg_shuffle();";
+      $output .= "\n  jQuery('ul#" . $html_id . "').jj_ngg_shuffle();";
     }
-    $output .= "\n    jQuery('ul#" . $html_id . "').jcarousel(";
+    $output .= "\n  jQuery('ul#" . $html_id . "').jcarousel(";
     if(count($javascript_args) > 0)
     {
       $output .= "{" . implode(",", $javascript_args) . "}";
     }
     $output .= ");";        
-    $output .= "\n  });";  
     $output .= "\n</script>\n";
  
     if($shortcode != '1')
