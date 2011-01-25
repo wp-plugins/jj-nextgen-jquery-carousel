@@ -4,9 +4,9 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PSCMP
 Tags: image, picture, photo, widgets, gallery, images, nextgen-gallery, jquery, jcarousel, carousel, javascript
 Requires at least: 2.8
 Tested up to: 3.0.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
-Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a JQuery JCarousel.
+Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 
 == Description ==
 
@@ -15,8 +15,9 @@ This plugin uses the 'NextGen Gallery' plugin for its images.
 
 Other plugins for NextGen Gallery and jQuery:
 
-- JJ NextGen JQuery Slider http://wordpress.org/extend/plugins/jj-nextgen-jquery-slider/
-- JJ NextGen JQuery Cycle http://wordpress.org/extend/plugins/jj-nextgen-jquery-cycle/
+- JJ NextGen JQuery Slider (http://wordpress.org/extend/plugins/jj-nextgen-jquery-slider/)
+- JJ NextGen JQuery Cycle (http://wordpress.org/extend/plugins/jj-nextgen-jquery-cycle/)
+- JJ NextGen Unload (http://wordpress.org/extend/plugins/jj-nextgen-unload/)
 
 Requirements:
 

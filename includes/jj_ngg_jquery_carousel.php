@@ -5,7 +5,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
   
   function JJ_NGG_JQuery_Carousel()
   {
-    $widget_ops = array('classname' => 'jj-nexgen-jquery_carousel', 'description' => "Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a JQuery JCarousel.");
+    $widget_ops = array('classname' => 'jj-nexgen-jquery_carousel', 'description' => "Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.");
     $this->WP_Widget('jj-nexgen-jquery_carousel', 'JJ NextGEN JQuery Carousel', $widget_ops);
   }
   
