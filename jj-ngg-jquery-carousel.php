@@ -3,7 +3,7 @@
 Plugin Name: JJ NextGen JQuery Carousel
 Description: Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 Author: JJ Coder
-Version: 1.0.3
+Version: 1.0.4
 */
 
 if ( ! defined( 'WPJJNGGJ_CAROUSEL_PLUGIN_BASENAME' ) )

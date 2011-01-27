@@ -166,7 +166,19 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
         
         $output .= "\n    <li>";
         
-        if($image_alt != '')
+        // check that alt is url with a simple validation
+        $use_url = false;        
+        if($image_alt != '' && (substr($image_alt, 0, 1) == '/' || substr($image_alt, 0, 4) == 'http' || substr($image_alt, 0, 3) == 'ftp'))
+        {
+          $use_url = true;
+        }
+        // if alt isn't a url make it the alt text to backwards support nextgen galleries
+        elseif($image_alt != '') 
+        {
+          $image_description = $image_alt;
+        }
+      
+        if($use_url)
         {
           $output .= "<a href=\"" . esc_attr($image_alt) . "\">";
         }
@@ -189,7 +201,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
         }     
         $output .= "<img src=\"" . $image->imageURL . "\" " . $image_description . $width_d . $height_d . "/>";
         
-        if($image_alt != '')
+        if($use_url)
         {
           $output .= "</a>";
         }  
