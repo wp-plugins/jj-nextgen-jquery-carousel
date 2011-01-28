@@ -78,7 +78,7 @@ Please refer to the description for requirements and how to use this plugin.
 
 Q: How to make a new skin?
 A: 
-- Make a copy of the skins/tango folder.
+- Make a copy of the skins/tango folder located in the plugin folder.
 - Rename folder to something else.
 - Copy folder to a location where you can create a link to it in the head of your html page. Don't put in plugins folder or your changes could be lost in updates.
 - In skin.css file replace all '.jcarousel-skin-tango' selectors with your own eg, 'jcarousel-skin-custom'.
