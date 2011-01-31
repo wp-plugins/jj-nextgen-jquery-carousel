@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PSCMP
 Tags: image, picture, photo, widgets, gallery, images, nextgen-gallery, jquery, jcarousel, carousel, javascript
 Requires at least: 2.8
 Tested up to: 3.0.4
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 
 Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 
@@ -76,8 +76,12 @@ Please refer to the description for requirements and how to use this plugin.
 
 == Frequently Asked Questions ==
 
-Q: How to make a new skin?
-A: 
+Question: 
+
+- How do you make a new skin?
+
+Answer:
+ 
 - Make a copy of the skins/tango folder located in the plugin folder.
 - Rename folder to something else.
 - Copy folder to a location where you can create a link to it in the head of your html page. Don't put in plugins folder or your changes could be lost in updates.
@@ -95,6 +99,7 @@ Email: wpjjcoder@gmail.com
 
 == Changelog ==
 
+- 1.0.6: Widget header is now a h2 tag. Widget output fix.
 - 1.0.5: FAQ update with how to create a new skin.
 - 1.0.4: Better support for NextGen galleries already created. Alt text is now checked to see if its a url. If its not a url alt text will be used for image alt instead of description if it exists.
 - 1.0.3: Tidy up.

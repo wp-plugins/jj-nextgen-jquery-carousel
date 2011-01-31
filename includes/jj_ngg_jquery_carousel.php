@@ -89,7 +89,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
     {         
       if($title != '')
       {
-        $output .= "\n<h3>" . $title . "</h3>";
+        $output .= "\n<h2>" . $title . "</h2>";
       }     
             
       // adjust width and height of carousel
@@ -256,7 +256,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
  
     if($shortcode != '1')
     {
-      echo "<ul class=\"ul_jj_carousel\"><li class=\"li_jj_carousel\">" . $output . "</ul></li>";
+      echo "\n<li class=\"li_jj_carousel_container\">\n  <ul class=\"ul_jj_carousel\">\n    <li class=\"li_jj_carousel\">" . $output . "\n    </li>\n  </ul>\n</li>";
     }
     else
     {
