@@ -88,9 +88,16 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
     if($p_size > 0) 
     {         
       if($title != '')
-      {
-        $output .= "\n<h2>" . $title . "</h2>";
-      }     
+      {      
+        if($shortcode != '1')
+        {      
+          $output .= "\n" . $before_title . $title . $after_title;
+        }
+        else
+        {
+          $output .= "\n<h3>" . $title . "</h3>";
+        }
+      } 
             
       // adjust width and height of carousel
       if($width != '' && $height != '')
@@ -199,7 +206,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
           $width_d = " width=\"" . $width . "\"";
           $height_d = " height=\"" . $height . "\"";  
         }     
-        $output .= "<img src=\"" . $image->imageURL . "\" " . $image_description . $width_d . $height_d . "/>";
+        $output .= "<img src=\"" . $image->imageURL . "\" " . $image_description . $width_d . $height_d . " border=\"0\" />";
         
         if($use_url)
         {
@@ -256,7 +263,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
  
     if($shortcode != '1')
     {
-      echo "\n<li class=\"li_jj_carousel_container\">\n  <ul class=\"ul_jj_carousel\">\n    <li class=\"li_jj_carousel\">" . $output . "\n    </li>\n  </ul>\n</li>";
+      echo $before_widget . "\n<ul class=\"ul_jj_carousel\">\n    <li class=\"li_jj_carousel\">" . $output . "\n    </li>\n  </ul>\n" . $after_widget;
     }
     else
     {

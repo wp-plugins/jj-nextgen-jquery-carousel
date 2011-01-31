@@ -170,3 +170,13 @@
     cursor: default;
     background-position: 0 -96px;
 }
+
+ul.ul_jj_carousel {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.ul_jj_carousel li.li_jj_carousel {
+  margin: 0;
+  padding: 0;  
+}
