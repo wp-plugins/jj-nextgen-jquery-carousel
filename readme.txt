@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PSCMP
 Tags: image, picture, photo, widgets, gallery, images, nextgen-gallery, jquery, jcarousel, carousel, javascript
 Requires at least: 2.8
 Tested up to: 3.0.4
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 
 Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 
@@ -99,6 +99,7 @@ Email: wpjjcoder@gmail.com
 
 == Changelog ==
 
+- 1.0.8: NextGen images that are excluded now don't show up.
 - 1.0.7: Images attribute border="0" added. before_title, after_title, before_widget, after_widget enabled for widgets. No styling on ul and li now in widget.
 - 1.0.6: Widget header is now a h2 tag. Widget output fix.
 - 1.0.5: FAQ update with how to create a new skin.
