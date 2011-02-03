@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PSCMP
 Tags: image, picture, photo, widgets, gallery, images, nextgen-gallery, jquery, jcarousel, carousel, javascript
 Requires at least: 2.8
 Tested up to: 3.0.4
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 
 Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 
@@ -90,6 +90,14 @@ Answer:
 - Import your new skin.css file in to your html page.
 - Use the 'Skin class' field in the widget or the shortcode skin_class to assign your new skin class eg, 'jcarousel-skin-custom'.
 
+Question:
+
+- How do you make carousel scroll in the other direction?
+
+Answer:
+
+- Make scroll parameter a negative number eg -1 or -2 etc. Note: make sure auto is set to number of seconds for auto scrolling.
+
 Email: wpjjcoder@gmail.com
 
 == Screenshots ==
@@ -99,6 +107,7 @@ Email: wpjjcoder@gmail.com
 
 == Changelog ==
 
+- 1.0.9: FAQ about how to make carousel scroll in other direction.
 - 1.0.8: NextGen images that are excluded now don't show up.
 - 1.0.7: Images attribute border="0" added. before_title, after_title, before_widget, after_widget enabled for widgets. No styling on ul and li now in widget.
 - 1.0.6: Widget header is now a h2 tag. Widget output fix.
