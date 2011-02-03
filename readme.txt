@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PSCMP
 Tags: image, picture, photo, widgets, gallery, images, nextgen-gallery, jquery, jcarousel, carousel, javascript
 Requires at least: 2.8
 Tested up to: 3.0.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 
 Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 
@@ -107,6 +107,7 @@ Email: wpjjcoder@gmail.com
 
 == Changelog ==
 
+- 1.1.1: Fix.
 - 1.1.0: Optimisation.
 - 1.0.9: FAQ about how to make carousel scroll in other direction.
 - 1.0.8: NextGen images that are excluded now don't show up.
