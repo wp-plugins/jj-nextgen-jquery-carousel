@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PSCMP
 Tags: image, picture, photo, widgets, gallery, images, nextgen-gallery, jquery, jcarousel, carousel, javascript
 Requires at least: 2.8
 Tested up to: 3.0.4
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 
 Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 
@@ -37,6 +37,7 @@ NOTE: sc means shortcode:
 - Title: Title. Leave blank for no title. (sc: title="My Carousel")
 - Gallery: Leave blank to use all galleries or choose a gallery to use. (sc: gallery="galleryid")
 - Order: Order to display results in. You can choose; Random, Latest First, Oldest First, or NextGen Sortorder. Random will still work when a page is cached. (sc: order="random"|"asc"|"desc"|"sortorder")
+- Shuffle: If order is random and this is true will shuffle images with javascript. Useful if your are caching your pages. (sc: shuffle="true"|"false")
 - Max pictures: The maximum amount of pictures to use. (sc: max_pictures="6")
 - HTML id: HTML id to use. Defaults to 'jcarousel'. Needs to be different for multiple instances on same page. (sc: html_id="jcarousel")
 - Skin class: class of skinning to use. Defaults to use the tango skin. (sc: skin_class="jcarousel-skin-tango")
@@ -107,6 +108,7 @@ Email: wpjjcoder@gmail.com
 
 == Changelog ==
 
+- 1.1.2: New shuffle field. If order is random and this is true will shuffle images with javascript. Useful if your are caching your pages. This use to be always on in previous verions but some people want images to load in order so if not caching the page no need to be turned on.
 - 1.1.1: Fix.
 - 1.1.0: Optimisation.
 - 1.0.9: FAQ about how to make carousel scroll in other direction.

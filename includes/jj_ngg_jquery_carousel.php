@@ -18,6 +18,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
     $title = apply_filters('widget_title', $instance['title']);
     $html_id = $this->get_val($instance, 'html_id', 'jcarousel');
     $order = $this->get_val($instance, 'order', 'asc', false);
+    $shuffle = $this->get_val($instance, 'shuffle');
     $limit = $this->get_val_numeric($instance, 'max_pictures');
     $gallery = $this->get_val_numeric($instance, 'gallery');
     $skin_class = $this->get_val($instance, 'skin_class', 'jcarousel-skin-tango');
@@ -249,7 +250,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
     // Add javascript
     $output .= "\n<script type=\"text/javascript\">";
     // Shuffle results on random order so even if page is cached the order will be different each time
-    if($order == 'random')
+    if($order == 'random' && $shuffle == 'true')
     {
       $output .= "\n  jQuery('ul#" . $html_id . "').jj_ngg_shuffle();";
     }
@@ -307,6 +308,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
       'gallery' => '',
       'html_id' => 'jcarousel',
       'order' => 'random',
+      'shuffle' => 'false',
       'max_pictures' => '',
       'skin_class' => '',
       'width' => '75',
@@ -377,6 +379,11 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
       } ?>
     </select>
   </p>
+  <p>
+    <label><strong>Shuffle:</strong> <small>(Only for random order)</small></label><br />
+    <input type="radio" id="<?php echo $this->get_field_id('shuffle'); ?>_true" name="<?php echo $this->get_field_name('shuffle'); ?>" value="true" style="vertical-align: middle;"<?php if($instance['shuffle'] == 'true') { echo " checked=\"checked\""; } ?> /><label for="<?php echo $this->get_field_id('shuffle'); ?>_true" style="vertical-align: middle;">true</label>
+    <input type="radio" id="<?php echo $this->get_field_id('shuffle'); ?>_false" name="<?php echo $this->get_field_name('shuffle'); ?>" value="false" style="vertical-align: middle;"<?php if($instance['shuffle'] == 'false') { echo " checked=\"checked\""; } ?> /><label for="<?php echo $this->get_field_id('shuffle'); ?>_false" style="vertical-align: middle;">false</label>          
+  </p>   
   <p>
     <label for="<?php echo $this->get_field_id('max_pictures'); ?>"><strong>Max pictures:</strong> (Leave blank for all)</label><br />
     <input type="text" id="<?php echo $this->get_field_id('max_pictures'); ?>" name="<?php echo $this->get_field_name('max_pictures'); ?>" value="<?php echo $instance['max_pictures']; ?>" size="3" />
