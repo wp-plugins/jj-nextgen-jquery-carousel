@@ -3,8 +3,8 @@ Contributors: JJ Coder
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PSCMPVDADYP74&lc=NZ&item_name=JJNextGenJQueryCarousel&item_number=jjcoder_carousel&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: image, picture, photo, widgets, gallery, images, nextgen-gallery, jquery, jcarousel, carousel, javascript
 Requires at least: 2.8
-Tested up to: 3.0.4
-Stable tag: 1.1.2
+Tested up to: 3.0.5
+Stable tag: 1.1.3
 
 Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 
@@ -12,12 +12,6 @@ Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQue
 
 The 'JJ NextGen JQuery Carousel' allows you to create a 'JCarousel' (http://sorgalla.com/projects/jcarousel/) as a widget or as a shortcode.
 This plugin uses the 'NextGen Gallery' plugin for its images.
-
-Other plugins for NextGen Gallery and jQuery:
-
-- JJ NextGen JQuery Slider (http://wordpress.org/extend/plugins/jj-nextgen-jquery-slider/)
-- JJ NextGen JQuery Cycle (http://wordpress.org/extend/plugins/jj-nextgen-jquery-cycle/)
-- JJ NextGen Unload (http://wordpress.org/extend/plugins/jj-nextgen-unload/)
 
 Requirements:
 
@@ -40,10 +34,10 @@ NOTE: sc means shortcode:
 - Shuffle: If order is random and this is true will shuffle images with javascript. Useful if your are caching your pages. (sc: shuffle="true"|"false")
 - Max pictures: The maximum amount of pictures to use. (sc: max_pictures="6")
 - HTML id: HTML id to use. Defaults to 'jcarousel'. Needs to be different for multiple instances on same page. (sc: html_id="jcarousel")
-- Skin class: class of skinning to use. Defaults to use the tango skin. (sc: skin_class="jcarousel-skin-tango")
+- Skin class: Class of skinning to use. Defaults to use the tango skin. (sc: skin_class="jcarousel-skin-tango")
 - Image width: Width of image. Defaults to 75. (sc: width="200")
-- Image height: height of image. Defaults to 75. (sc: height="150")
-- Image gap: gap between images. (sc: gap="5")
+- Image height: Height of image. Defaults to 75. (sc: height="150")
+- Image gap: Gap between images. (sc: gap="5")
 
 JCarousel settings:
 
@@ -66,6 +60,14 @@ Shortcode Examples:
 - [jj-ngg-jquery-carousel html_id="about-jcarousel" gallery="1"]
 - [jj-ngg-jquery-carousel title="Hello" html_id="about-jcarousel" gallery="1" vertical="true"]
 - [jj-ngg-jquery-carousel html_id="about-jcarousel" gallery="2" width="150" height="100" visible="2" scroll="1" auto="3"]
+
+Try out my other plugins:
+
+- JJ NextGen JQuery Slider (http://wordpress.org/extend/plugins/jj-nextgen-jquery-slider/)
+- JJ NextGen JQuery Cycle (http://wordpress.org/extend/plugins/jj-nextgen-jquery-cycle/)
+- JJ NextGen Unload (http://wordpress.org/extend/plugins/jj-nextgen-unload/)
+- JJ NextGen Image List (http://wordpress.org/extend/plugins/jj-nextgen-image-list/)
+- JJ SwfObject (http://wordpress.org/extend/plugins/jj-swfobject/)
 
 == Installation ==
 
@@ -108,6 +110,7 @@ Email: wpjjcoder@gmail.com
 
 == Changelog ==
 
+- 1.1.3: Readme.
 - 1.1.2: New shuffle field. If order is random and this is true will shuffle images with javascript. Useful if your are caching your pages. This use to be always on in previous verions but some people want images to load in order so if not caching the page no need to be turned on.
 - 1.1.1: Fix.
 - 1.1.0: Optimisation.
