@@ -127,8 +127,8 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
           $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-prev-horizontal { top: " . $top_offset . "px !important; }";          
           if($gap != '')
           {
-            $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-item-horizontal { margin-right: " . $gap . "px !important; }";
-            $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: " . $gap . "px !important; }";
+            $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-item-horizontal { margin-right: " . $gap . "px; }";
+            $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: " . $gap . "px; }";
           }   
         }
         else
@@ -153,7 +153,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
             $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-item-vertical { margin-bottom: " . $gap . "px !important; }";
           }      
         }     
-        $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-item { width: " . $width . "px !important; height: " . $height . "px !important; }";                     
+        $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-item { width: " . $width . "px; height: " . $height . "px; }";                     
         $output .= "\n</style>";
       }     
             
@@ -259,7 +259,12 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
     {
       $output .= "{" . implode(",", $javascript_args) . "}";
     }
-    $output .= ");";        
+    $output .= ");"; 
+    
+    // Hack to make jcarousel work with gaps       
+    if($width != '') {
+      $output .= "\n  jQuery('ul#" . $html_id . " li').width(" . $width . ");";
+    }
     $output .= "\n</script>\n";
  
     if($shortcode != '1')

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PSCMP
 Tags: image, picture, photo, widgets, gallery, images, nextgen-gallery, jquery, jcarousel, carousel, javascript
 Requires at least: 2.8
 Tested up to: 3.0.5
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 
 Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 
@@ -110,6 +110,7 @@ Email: wpjjcoder@gmail.com
 
 == Changelog ==
 
+- 1.1.5: Gap fixes.
 - 1.1.4: Readme.
 - 1.1.3: Readme.
 - 1.1.2: New shuffle field. If order is random and this is true will shuffle images with javascript. Useful if you are caching your pages. This use to be always on in previous verions but some people want images to load in order so if not caching the page no need to be turned on.
