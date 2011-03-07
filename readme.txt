@@ -1,10 +1,10 @@
 === JJ NextGen JQuery Carousel ===
 Contributors: JJ Coder
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PSCMPVDADYP74&lc=NZ&item_name=JJNextGenJQueryCarousel&item_number=jjcoder_carousel&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
+Donate link: http://www.redcross.org.nz/donate
 Tags: image, picture, photo, widgets, gallery, images, nextgen-gallery, jquery, jcarousel, carousel, javascript
 Requires at least: 2.8
-Tested up to: 3.0.5
-Stable tag: 1.1.5
+Tested up to: 3.1
+Stable tag: 1.1.6
 
 Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 
@@ -101,8 +101,22 @@ Answer:
 
 - Make scroll parameter a negative number eg -1 or -2 etc. Note: make sure auto is set to number of seconds for auto scrolling.
 
-Email: wpjjcoder@gmail.com
+Question:
 
+- How can I use plugin inside normal PHP code?
+
+Answer:
+
+- echo do_shortcode('[jj-ngg-jquery-carousel html_id="about-jcarousel" gallery="2" width="150" height="100" visible="2" scroll="1" auto="3"]');
+
+Question:
+
+- Doesn't work after upgrade? or Doesn't work with this theme? ... going to give you bad rating if blah blah... etc
+  
+Answer:
+
+- Please check that you don't have two versions of jQuery loading, this is the problem most of the time. Also I don't care if people give me a bad rating... even if its due to some technical fault outside of the scope of the plugin. I made these plugins because I required the functionality and I thought other people might find them useful.
+  
 == Screenshots ==
 
 1. Horizontal carousel.
@@ -110,6 +124,7 @@ Email: wpjjcoder@gmail.com
 
 == Changelog ==
 
+- 1.1.6: Donate to Christchurch Quake.
 - 1.1.5: Gap fixes.
 - 1.1.4: Readme.
 - 1.1.3: Readme.
@@ -127,5 +142,3 @@ Email: wpjjcoder@gmail.com
 - 1.0.0: First version.
 
 == Contributors ==
-
-JJ Coder wpjjcoder@gmail.com
