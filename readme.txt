@@ -4,7 +4,7 @@ Donate link: http://www.redcross.org.nz/donate
 Tags: image, picture, photo, widgets, gallery, images, nextgen-gallery, jquery, jcarousel, carousel, javascript
 Requires at least: 2.8
 Tested up to: 3.1
-Stable tag: 1.1.7
+Stable tag: 1.1.8
 
 Allows you to pick a gallery from the 'NextGen Gallery' plugin to use as a 'JQuery JCarousel'.
 
@@ -124,6 +124,7 @@ Answer:
 
 == Changelog ==
 
+- 1.1.8: rtl fix.
 - 1.1.7: FAQ.
 - 1.1.6: Donate to Christchurch Quake.
 - 1.1.5: Gap fixes.

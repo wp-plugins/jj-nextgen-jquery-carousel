@@ -236,7 +236,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
     }    
     
     if($vertical != "") { $javascript_args[] = "vertical: " . $vertical; }
-    if($rtl != "") { $javascript_args[] = "jrtl: ". $rtl; }     
+    if($rtl != "") { $javascript_args[] = "rtl: ". $rtl; }     
     if($start != "") { $javascript_args[] = "start: " . $start ; }
     if($offset != "") { $javascript_args[] = "offset: " . $offset; }
     if($size != "") { $javascript_args[] = "size: " . $size; }    
